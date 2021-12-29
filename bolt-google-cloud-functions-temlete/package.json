@@ -1,0 +1,23 @@
+{
+  "name": "bolt-templete",
+  "version": "1.0.0",
+  "description": "templete for your basic bolt app",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.build.json",
+    "clean": "rimraf ./dist",
+    "start": "ts-node-dev script/run.ts"
+  },
+  "author": "serlin",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.6.0",
+    "jsx-slack": "^4.3.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
