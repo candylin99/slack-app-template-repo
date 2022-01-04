@@ -14,7 +14,7 @@ const handleEvent = async () => {
 
   const submitter = await app.client.users.lookupByEmail({
     token: process.env.SLACK_BOT_TOKEN,
-    email: 'xx@aftership.com',
+    email: 'xx@xx.com',
   })
   const submitterId = submitter.user.id
 
